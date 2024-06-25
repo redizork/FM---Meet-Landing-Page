@@ -1,0 +1,382 @@
+/* Red Hat Display Font */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Variables */
+
+:root {
+  --bg-color: hsl(0, 0%, 98%);
+  --body-txt-color: hsl(240, 10%, 57%);
+  --h1-txt-color: hsl(240, 21%, 20%);
+  --green-btn-color: hsla(192, 37%, 48%);
+  --green-btn-color-hover: hsla(192, 90%, 77%);
+  --violet-btn-color: hsl(268, 34%, 53%);
+  --violet-btn-color-hover: hsla(268, 100%, 86%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 150%;
+  min-height: 100vh;
+  height: auto;
+  font-family: "Red Hat Display", sans-serif;
+  color: var(--body-txt-color);
+  background-color: var(--bg-color);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.container-lg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 3.2rem;
+  margin: 0 auto;
+  max-width: 144rem;
+}
+
+/* Buttons */
+
+.buttons {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.btn-green {
+  background-color: var(--green-btn-color);
+  color: var(--bg-color);
+  padding: 1.6rem 3.2rem;
+  border-radius: 100px;
+  font-weight: 700;
+}
+
+.btn-green:hover {
+  background-color: var(--green-btn-color-hover);
+}
+
+.btn-violet {
+  background-color: var(--violet-btn-color);
+  color: var(--bg-color);
+  padding: 1.6rem 3.2rem;
+  border-radius: 100px;
+  font-weight: 700;
+}
+
+.btn-violet:hover {
+  background-color: var(--violet-btn-color-hover);
+}
+
+.btn-violet-footer {
+  background-color: var(--violet-btn-color);
+  color: var(--bg-color);
+  padding: 1.6rem 3.2rem;
+  border-radius: 100px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.btn-violet-footer:hover {
+  background-color: var(--violet-btn-color-hover);
+}
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+/* Main */
+
+.hero-section {
+  text-align: center;
+  margin-top: 6.4rem;
+}
+
+.tablet {
+  display: none;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 6.4rem;
+  font-weight: 900;
+  line-height: 100%;
+  margin-top: 6rem;
+  margin-bottom: 3.4rem;
+  color: var(--h1-txt-color);
+}
+
+p {
+  margin-bottom: 3.2rem;
+}
+
+.section-number {
+  display: grid;
+  place-items: center;
+  margin-top: 25rem;
+  position: relative;
+}
+
+.section-number p {
+  font-weight: 800;
+  border: 1px solid var(--body-txt-color);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.section-number p::before {
+  position: absolute;
+  left: 50%;
+  top: -60%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 1px;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: var(--body-txt-color);
+}
+
+.section-number-footer {
+  margin-bottom: -6rem;
+}
+
+.section-number-footer p {
+  background-color: #fff;
+}
+
+.about-section {
+  margin-top: 10rem;
+  max-width: 144rem;
+  margin: 10rem auto;
+}
+
+.images-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.images-item {
+  overflow: hidden;
+}
+
+.images-item img {
+  border-radius: 0.8rem;
+  transition: all 0.4s;
+}
+
+.images-item img:hover {
+  transform: scale(1.1);
+}
+
+.about-text-box {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.about-text-box h2 {
+  width: 30%;
+  margin: 0 auto;
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--h1-txt-color);
+  line-height: 120%;
+  margin-bottom: 3.2rem;
+}
+
+.about-text-box h3 {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  color: var(--green-btn-color);
+  margin-bottom: 2rem;
+}
+
+.about-text-box p {
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 3.2rem;
+}
+
+/* Footer */
+
+.footer {
+  background: url(img/desktop/image-footer.jpg) rgba(77, 150, 169);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 144rem;
+  padding-block: 12rem;
+}
+
+.footer-wrapper h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 120%;
+  color: #fff;
+  margin-bottom: 3.2rem;
+}
+
+.footer-wrapper p {
+  font-size: 1.8rem;
+  line-height: 160%;
+  color: #fff;
+  width: 80%;
+}
+
+.footer-wrapper a {
+  justify-self: end;
+}
+/* Media Queries */
+
+@media (max-width: 1440px) {
+  .images-wrapper,
+  .footer-wrapper {
+    padding-inline: 4rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-wrapper a {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-lg {
+    grid-template-columns: 1fr;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  h1 {
+    width: 70%;
+    font-size: 4.8rem;
+  }
+
+  p {
+    width: 55%;
+    font-size: 1.6rem;
+  }
+
+  .images-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 2rem;
+    gap: 2rem;
+  }
+
+  .about-text-box h2 {
+    width: 75%;
+    font-size: 3.2rem;
+  }
+
+  .about-text-box p {
+    width: 75%;
+    font-size: 1.6rem;
+  }
+
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer-wrapper h2 {
+    width: 85%;
+    text-align: center;
+  }
+
+  .footer-wrapper p {
+    width: 75%;
+    text-align: center;
+  }
+
+  .footer-wrapper a {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer-wrapper a {
+    width: 60%;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 4rem;
+    width: 100%;
+  }
+
+  .col p {
+    width: 85%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text-box h2 {
+    width: 90%;
+    font-size: 3.2rem;
+  }
+
+  .about-text-box h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer-wrapper h2 {
+    width: 90%;
+    font-size: 3.2rem;
+  }
+
+  .footer-wrapper a {
+    width: 60%;
+  }
+}
